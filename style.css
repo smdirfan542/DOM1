@@ -10,44 +10,25 @@ body {
   height: 100%;
   width: 100%;
 }
-#container1{
-    background-color: crimson;
-    height:400px;
-    width:400px;
-    border-radius: 8px;
-    margin:2rem;  
-    border:1px solid black;
-}
-.container2{
-  border:2px solid black;
-}
 .main{
-  height:500px;
-  width:500px;
-  background-color: red;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin:10px 20px;
-  border-radius: 8px;
-}
-.second{
-  height:200px;
-  width:200px;
-  border-radius: 8px;
+  height:100vh;
+  width:100vw;
   background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
-#iplbtn{
-  padding:10px 20px;
-  border-radius: 5px;
-  outline: none;
-  border: none;
+#btn{
+  background-color: crimson;
+  padding: 10px 20px;
+  border:none;
+  color:white;
+  border-radius: 8px;
+  position:relative;
+  z-index: 9;
+  cursor: pointer;
   user-select: none;
 }
-#iplbtn:active{
-  scale: 0.92;
+#btn:active{
+  scale:0.94;
 }
