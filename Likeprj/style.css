@@ -1,0 +1,51 @@
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.container{
+    height: 500px;
+    width:400px;
+    overflow: hidden;
+    margin:1rem;
+    position: relative;
+    background-color: gainsboro;
+    padding:1rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ri-heart-line{
+    font-size: 80px;
+    /* border:2px solid black; */
+    padding: 1rem;
+    margin: 1rem;
+    color: red;
+    background-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0); /* Hidden initially */
+    transition: all ease 0.4s;
+}
+.container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.imgcon{
+    overflow: hidden;
+    position: relative;
+}
