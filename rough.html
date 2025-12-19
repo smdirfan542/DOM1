@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: serif;
+}
+.main{
+    height:100%;
+    width:100%;
+    background-color:black;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:2rem;
+    
+}
+.user1{
+    width:90%;
+    background-color: grey;
+    height:80px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom:2rem;
+    align-items:center;
+}
+.user2{
+    width:90%;
+    background-color: grey;
+    height:80px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom:2rem;
+    align-items:center;
+}
+.user{
+    width:90%;
+    background-color: grey;
+    height:80px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom:2rem;
+    align-items:center;
+}
+button{
+    padding:10px 12px;
+    height:fit-content;
+    border-radius: 8px;
+    border:none;
+    background-color: rgb(9, 9, 155);
+    color:white;
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="user">
+            <p>Smd Irfan</p>
+            <button  >Add Friend</button>
+        </div>
+        <div class="user">
+            <p>Smd Irfan</p>
+            <button >Add Friend</button>
+        </div>
+        <div class="user">
+            <p>Smd Irfan</p>
+            <button >Add Friend</button>
+        </div>
+    </div>
+    <script>
+        var main=document.querySelector('.main');
+        var elems=document.querySelectorAll('.user');
+        elems.forEach(function(elem){
+           
+                elem.childNodes[3].addEventListener('click',function(){
+                     if(elem.childNodes[3].innerHTML=='Add Friend'){
+
+                    elem.childNodes[3].style.backgroundColor='red';
+                    elem.childNodes[3].innerHTML='Unfollow'}
+                    else{
+                elem.childNodes[3].style.backgroundColor='rgb(9, 9, 155)';
+                elem.childNodes[3].innerHTML='Add Friend'
+            }
+                })
+            
+        })
+    </script>
+</body>
+</html>
